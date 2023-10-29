@@ -1,0 +1,289 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+:root{
+    --background-color: rgb(2,6,12);
+    --nav-color: rgb(34,37,38);
+    --border-color: rgb(123,114,100);
+    --white-color: #fff;
+    --blue-color: rgb(22, 108, 222);
+    --primary-color: rgb(201,141,106);
+    --header-color: rgb(18,20,20);
+}
+.column{
+    width: 968px;
+    margin: auto;
+}
+.cross-dashed{
+    border-bottom: 2px dashed var(--border-color);
+    margin-top: 40px;
+}
+.cross-dashed:hover{
+    color: var(--primary-color);
+}
+.no_cross{
+    border: none;
+}
+.left-chapter_link  .new-chapter{
+    background-color: rgb(79,86,89);
+}
+@keyframes playIcon{
+    from{
+        font-size: 56px;
+        opacity: 0;
+    }
+    to{
+        font-size: 44px;
+        opacity: 1;
+    }
+}
+/* ----------------------------------------Nav------------------------------ */
+header{
+    width: auto;
+    height: 90px;
+    background-color: rgb(38,42,43);
+}
+.column-header{
+    display: flex;
+
+    justify-content: space-between;
+}   
+.header-logo{
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.header-logo_img{
+    width: 225px;
+}
+.header-search{
+    position: relative;
+    margin-top: 28px;
+    /* margin-left: 28px; */
+}
+.header-search input{
+    width: 348px;
+    height: 30px;
+    padding-left: 12px;
+    padding-right: 38px;
+    font-style: italic;
+    color: var(--white-color);
+    background-color: rgb(44,48,50);
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+}
+.header-search ion-icon{
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    padding-left: 4px;
+    color: var(--white-color);
+    font-size: 26px;
+    font-weight: 800;
+    border-left: 1px solid var(--border-color);
+}
+
+.header-form{
+    display: flex;
+    margin-top: 12px;
+}
+.header-form_login{
+    display: block;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 14px;
+    opacity: 0.96;
+}
+.header-form_login:hover{
+    opacity: 0.6;
+}
+
+.header-icon{
+    font-size: 16px;
+    margin: 0px 2px 0px 12px;
+    color: var(--white-color);
+}   
+/* ------------------------------------------------------------End header-------------------------------------------------------- */
+
+/* ------------------------------------------------------------Begin Nav--------------------------------------------------------- */
+nav{
+    height: 56px;
+    background-color: var(--nav-color);
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+.nav-list_link{
+    display: block;
+    text-decoration: none;
+    margin-right: 16px;
+    color: var(--white-color);
+    font-size: 17px;
+    line-height: 52px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.nav-list_link:hover{
+    color: var(--primary-color);
+}
+.nav-list_link.cross{
+    color: var(--primary-color);
+    border-bottom: 3px solid rgb(62,68,70);
+    padding: 0 4px;
+}
+.list_link-genre{
+    position: absolute;
+    width: 800px;
+    top: 20%;
+    padding-top: 16px;
+    font-size: 14px;
+    text-transform: capitalize;
+    z-index: 111;
+    transition: 0.5s;
+    
+    display: none;
+}
+.list_link-nation{
+    width: 500px;
+}
+.link-genre_wrap{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 12px;
+    background-color: var(--nav-color);
+    border-radius: 2px;
+    padding-top: 20px;
+}
+.link-genre_list{
+    display: block;
+    padding: 0px 0px 12px 12px ;
+    text-decoration: none;
+    color: var(--white-color);
+}
+.link-genre_list:hover{
+    color: var(--primary-color);
+}
+.list_nav1:hover .list_link-genre{
+    display: block;
+}
+.list_nav2:hover .list_link-genre{
+    display: block;
+}
+
+.list_link-year{
+    position: absolute;
+    top: 20%;
+    width: 200px;
+    padding-top: 16px;
+    z-index: 222;
+    list-style: none;
+    
+    display: none;
+}
+.link-year-wrap{
+    max-height: 310px;
+    overflow-Y: scroll;
+    padding: 6px 4px;
+    background-color: var(--nav-color);
+}
+.link-year_number{
+    display: block;
+    text-decoration: none;
+    margin: 8px 8px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--white-color);
+}
+
+.link-year_number:hover{
+    color: var(--primary-color);
+    background-color: #2d2c2c;
+}
+.list_nav3:hover .list_link-year{
+    display: block;
+}
+/* ----------------------------------------Nav------------------------------ */
+
+/* ---------------------------------------Footer---------------------------- */
+footer{
+    margin-top: 20px;
+    
+    background-color: rgb(34,37,38);
+}
+.footer-wrap{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+}
+.footer-left{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    list-style: none;
+    color: #9a9090;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.footer-left_link{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--white-color);
+    font-size: 16px;
+    font-style: normal;
+
+}
+.footer-left_link:hover{
+    color: var(--primary-color);
+}
+
+.footer-right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    background-color: rgb(40,43,45);
+}
+.footer-right_link{
+    margin: 8px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.watch-link_history{
+    font-size: 14px;
+    padding: 20px 0px;
+    color: var(--white-color);
+}
+.watch-link_notify,
+.link_history-wrap{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: rgb(18,20,20);
+    padding: 8px;
+    border: 1px solid var(--primary-color);
+}
+.link_history{
+    margin: 0px 4px;
+}
+.link_history-top{
+    width: 940px;
+    text-decoration: none;
+    color: var(--white-color);
+    text-transform: uppercase;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.link_history-top:hover{
+    color: var(--primary-color);
+}
