@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/web.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Mê Film</title>
+</head>
+<body>
+    <header>
+        <div class="column" class="column-header">
+            <a class="header-logo">
+                  <img src="/img/_motchill.png" alt="" class="header-logo_img">
+            </a>
+            <div class="header-search">
+                <input type="text" placeholder="Search: tên phim, tên tác giả,....">
+                <ion-icon class="header-icon" name="search-outline"></ion-icon>
+            </div>
+            <div class="header-form">
+                <ion-icon class="header-icon" name="log-in-outline"></ion-icon>
+                <a href="#" onclick="updateBtn()" class="header-form_login">
+                    Đăng Nhập
+                </a>
+                <ion-icon class="header-icon" name="people-outline"></ion-icon>
+                <a href="#" onclick="updateBtn()" class="header-form_login">
+                    Đăng ký
+                </a>
+                <ion-icon class="header-icon" name="bookmarks-outline"></ion-icon>
+                <a href="#" onclick="updateBtn()" class="header-form_login">
+                    Bookmark
+                </a>
+            </div>
+        </div>  
+    </header>
+    <nav>
+        <div class="column">
+            <ul class="nav-list">
+                <li><a href="#" class="nav-list_link cross">Trang chủ</a></li>
+                <li class="list_nav list_nav1">
+                    <a href="" class="nav-list_link">Thể loại</a>
+                    <div class="list_link-genre">
+                        <div class="link-genre_wrap">
+                            <a href="" class="link-genre_list">Cổ trang - thần thoại</a>
+                            <a href="" class="link-genre_list">Võ Thần - kiếm hiệp</a>
+                            <a href="" class="link-genre_list">Phiêu lưu - hành động</a>
+                            <a href="" class="link-genre_list">Tâm lý - tình cảm</a>
+                            <a href="" class="link-genre_list">Hoạt hình</a>
+                            <a href="" class="link-genre_list">Khoa học - viễn tưởng</a>
+                            <a href="" class="link-genre_list">Hình sự - Chiến tranh</a>
+                            <a href="" class="link-genre_list">Tài liệu - Khám phá</a>
+                            <a href="" class="link-genre_list">Văn hóa - tâm linh</a>
+                            <a href="" class="link-genre_list">Hài hước</a>
+                           
+                        </div>
+                    </div>
+                </li>
+                <li class="list_nav list_nav2">
+                    <a href="" class="nav-list_link ">Quốc Gia</a>
+                    <div class="list_link-genre list_link-nation">
+                        <div class="link-genre_wrap">
+                            <a href="" class="link-genre_list">Việt nam</a>
+                            <a href="" class="link-genre_list">Trung quốc</a>
+                            <a href="" class="link-genre_list">Thái Lan</a>
+                            <a href="" class="link-genre_list">Hàn quốc</a>
+                            <a href="" class="link-genre_list">Hồng kông</a>
+                            
+                        </div>
+                    </div>
+                </li>
+                <li class="list_nav list_nav3">
+                    <a href="" class="nav-list_link">Phim mới</a>
+                    <ul class="list_link-year">
+                        <div class="link-year-wrap">
+                            <li><a href="" class="link-year_number">Phim: 2023</a></li>  
+                            <li><a href="" class="link-year_number">Phim: 2022</a></li>  
+                            <li><a href="" class="link-year_number">Phim: 2021</a></li>  
+                            <li><a href="" class="link-year_number">Phim: 2020</a></li>  
+                            <li><a href="" class="link-year_number">Phim: 2019</a></li>  
+                            <li><a href="" class="link-year_number">Phim: 2018</a></li>  
+                            <li><a href="" class="link-year_number">Phim: 2017</a></li>  
+                            <li><a href="" class="link-year_number">Phim: 2016</a></li>  
+                            <li><a href="" class="link-year_number">Phim: 2015</a></li>  
+                            <li><a href="" class="link-year_number">Phim: 2014</a></li>  
+                            
+                        </div>
+                    </ul>
+
+                </li>
+                <li><a href="" class="nav-list_link">Phim Bộ</a></li>
+                <li><a href="" class="nav-list_link">Phim Lẻ</a></li>
+                <li><a href="" class="nav-list_link">Phim thuyết minh</a></li>
+                <li><a href="" class="nav-list_link">Phim chiếu rạp</a></li>
+                <li><a href="" class="nav-list_link">tv show</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="container">
+        <div class="column">
+            <div class="contain-hot">
+                <a href="" class="movie-header no_cross">phim hot</a>
+                <div class="movie-slide">
+                    <div class="movie-slide_icon prev " onclick="prevSlide()">
+                        <ion-icon class="prev-slide"  name="chevron-back-outline"></ion-icon>
+                    </div>
+                    <div class="movie-slide_wrap"><!--Js--></div>
+                    <div class="movie-slide_icon next " onclick="nextSlide()">
+                        <ion-icon class="next-slide"  name="chevron-forward-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="contain-films">
+                <div class="contain-films_left">
+                    <div class="film_left-update">
+                        <a href="" class="movie-header">Mới cập nhật</a>
+                        <div class="left-update_film"><!--JS--></div>
+                    </div>
+                    <div class="film_left-update">
+                        <a href="" class="movie-header">BỘ  phim Hoạt hình</a>
+                        <div class="left-update_film "><!--JS--></div>
+
+                    </div>
+                    <div class="film_left-update">
+                        <a href="" class="movie-header">Được yêu thích</a>
+                        <div class="left-update_film"><!--JS--></div>
+                	</div>
+				</div>
+                <div class="contain-film_right">
+                    <div class="film_right-update">
+                        <div  class="movie-header cross-dashed">phim sắp chiếu</div>
+                        <div class="film_right-film">
+                            <div class="right-film_link">
+                                <a href=""> 
+                                    <img src="/img/Cong-To-tinh-anh.jpg" alt="" class="film_link-img">
+                                </a>
+                                <div class="film_link-info">
+                                    <a href="" class="link-info_name">Cộng tớ tinh anh</a>
+                                    <div class="link-info_year">2023</div>
+                                    <span class="link-info_rate">
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="right-film_link film-rank">
+                                <a href=""> 
+                                    <img src="/img/Nhat-Niem-Vinh-Hang.jpg" alt="" class="film_link-img">
+                                </a>
+                                <div class="film_link-info">
+                                    <a href="" class="link-info_name">Nhất niệm vĩnh hằng</a>
+                                    <div class="link-info_year">2023</div>
+                                    <span class="link-info_rate">
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="film_right-follow">
+                        <div  class="movie-header cross-dashed">trending</div>
+                        <ul class="right-follow_time">
+                            <li class="follow_time-day click-time">Ngày</li>
+                            <li class="follow_time-day">Tuần</li>
+                            <li class="follow_time-day">Tháng</li>
+                        </ul>
+                        <div class="time-day_rank">
+                            <div class="day_rank-number">1</div>
+                            <div class="day_rank-info">
+                                <a href="" class="rank-info_name">Ba kiếp yêu hận</a>
+                                <p class="day_rank-care">
+                                    Lượt quan tâm:
+                                    <span class="rank-care_number">0</span>
+                                </p>    
+                            </div>
+                        </div>
+                        <div class="time-day_rank film-rank">
+                            <div class="day_rank-number">2</div>
+                            <div class="day_rank-info">
+                                <a href="" class="rank-info_name">Ba kiếp yêu hận</a>
+                                <p class="day_rank-care">
+                                    Lượt quan tâm:
+                                    <span class="rank-care_number">0</span>
+                                </p>      
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="film_right-word">
+                        <div  class="movie-header cross-dashed">Từ khóa nổi bật</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="column">
+            <div class="footer-wrap">
+                <div class="footer-left">
+                    <li>
+                        <a href="/html/home.html" class="footer-left_link">xem phim online</a>
+                        miễn phí chất lượng cao với phụ đề tiếng việt - thuyết minh - lồng tiếng. Name: Film có nhiều thể loại phim phong phú, đặc sắc, nhiều bộ phim hay nhất - mới nhất.
+                    </li>
+                     <li>Website motphim.net với giao diện trực quan, thuận tiện, tốc độ tải nhanh, thường xuyên cập nhật các bộ phim mới hứa hẹn sẽ đem lại những trải nghiệm tốt cho người dùng.</li>
+                </div>
+                <ul class="footer-right">
+                    <li><a class="footer-right_link" href="">Quy định</a></li>
+                    <li><a class="footer-right_link" href="">Điều khoản chung</a></li>
+                    <li><a class="footer-right_link" href="#">Trang chủ</a></li>
+                    <li><a class="footer-right_link" href="#">Giới thiệu</a></li>
+                    <li><a class="footer-right_link" href="">Chính sách riêng tư</a></li>
+                    <li><a class="footer-right_link" href="">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

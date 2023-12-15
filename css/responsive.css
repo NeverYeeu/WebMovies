@@ -1,0 +1,19 @@
+@media screen  and (max-width : 480px) {
+    .box-movie{
+        margin: 0;
+		display: block;
+    }
+	.box-movie .movie-display{
+		width: 100%;
+		height: auto;
+	}
+	#movie-nav{
+		margin: 20px auto;
+	}
+	.movie-list{
+		margin: 30px auto;
+	}
+	.display_box .list-link{
+		width: 100%;
+	}
+}
